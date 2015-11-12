@@ -99,3 +99,41 @@ div.img-list .li-mask {
 div.img-list .li-mask:hover div.text-content {
 	opacity: 1;
 } 
+
+/* V2 */
+/*The code below will simply setup the price-title area to be hidden and have a background. Please note that uou will have to change the background and height to match your website color scheme and product height  but first load it as and then adjust                                                                                      
+*/
+
+.products .product .product-details {
+    	position: absolute;
+    	background: rgba(119, 203, 109, 0.95);
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	/*height: 100% !important;*/
+    	color: #f7f7f7;
+    	padding: 1.618em;
+    	text-align: left;
+   	opacity: 0;
+   	filter: alpha(opacity=@opacity * 100);	
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+   	-ms-transition: all ease 0.4s;
+    	-o-transition: all ease 0.4s;
+    	transition: all ease 0.4s;
+  }
+
+/* Show the that was setup above when the user hovers*/
+
+  ul.products li.product:hover .product-details {
+	filter: alpha(opacity=@opacity * 100);
+	opacity: 1;
+  }
+
+  ul.products li.product a img:hover {
+	opacity: 0.9;
+  }
+  ul.products li.product img {
+  	margin: 0px !important;
+  }
