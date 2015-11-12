@@ -20,14 +20,14 @@ table.cart .product-thumbnail {display:table-cell;}
 .img-circle {
 }
 
-ul.img-list {
+div.img-list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
  
-ul.img-list li {
+div.img-list .li-mask {
 	/*display: inline-block;*/
 	margin: 0 1em 1em 0;
 	position: relative;
@@ -88,14 +88,14 @@ div.text-content p {
 	color: #fff;
 }
  
-ul.img-list a:hover {
+div.img-list a:hover {
 	text-decoration: none;
 }
 											
  
-ul.img-list li {
+div.img-list .li-mask {
 }
  
-ul.img-list li:hover div.text-content {
+div.img-list .li-mask:hover div.text-content {
 	opacity: 1;
 } 
