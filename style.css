@@ -1,0 +1,101 @@
+/*
+ Theme Name:   Store Child Hover
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Storefront Child Store Theme
+ Author:       Noelie SYLVAIN
+ Author URI:   http://noeliesylvain.fr
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  store-ernest
+*/
+a {
+   outline: 0 !important;
+}
+table.cart .product-thumbnail {display:table-cell;}
+.onsale { display: none !important; }
+
+.img-circle {
+}
+
+ul.img-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+ 
+ul.img-list li {
+	/*display: inline-block;*/
+	margin: 0 1em 1em 0;
+	position: relative;
+	height: 200px;
+	width: 200px;
+} 
+
+div.text-content {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	cursor: pointer;
+	display: table;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+div.text-content {
+	background: rgba(0,0,0,0.5);
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 200px;
+	width: 200px;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+ 
+div.text-content span {
+	/*display: table-cell;
+	text-align: center;
+	vertical-align: middle;*/
+}
+div.text-content h3 {
+	/*display: table-cell;
+	text-align: center;
+	vertical-align: middle;*/
+	margin-top: 15px;
+	font-size: 25px;
+	text-transform: uppercase;
+	padding: 10px;
+	box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+	background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%;
+	color: #fff;
+	display: block;
+}
+div.text-content p {
+	/*display: table-cell;
+	text-align: center;
+	vertical-align: middle;*/
+	font-weight: bold;
+	margin-top: 15px;
+	color: #fff;
+}
+ 
+ul.img-list a:hover {
+	text-decoration: none;
+}
+											
+ 
+ul.img-list li {
+}
+ 
+ul.img-list li:hover div.text-content {
+	opacity: 1;
+} 
