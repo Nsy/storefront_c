@@ -56,6 +56,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			 * woocommerce_before_shop_loop_item_title hook
 			 *
 			 * @hooked woocommerce_template_loop_product_thumbnail - 10
+			 * @hooked hover_wrap_open 20
 			 */
 			do_action( 'woocommerce_before_shop_loop_item_title_hover' );
 
@@ -69,8 +70,9 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			/**
 			 * woocommerce_after_shop_loop_item_title hook
 			 *
-			 * @hooked woocommerce_template_loop_rating - 5
 			 * @hooked woocommerce_template_loop_price - 10
+			 * @hooked woocommerce_template_loop_add_to_cart 30
+			 * @hooked hover_wrap_close 40
 			 */
 			do_action( 'woocommerce_after_shop_loop_item_title_hover' );
 		?>
@@ -82,7 +84,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 		/**
 		 * woocommerce_after_shop_loop_item hook
 		 *
-		 * @hooked woocommerce_template_loop_add_to_cart - 10
+		 * @hooked show_title_after_hover - 5
 		 */
 		do_action( 'woocommerce_after_shop_loop_item_hover' );
 
