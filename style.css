@@ -17,115 +17,34 @@ a {
 table.cart .product-thumbnail {display:table-cell;}
 .onsale { display: none !important; }
 
-.img-circle {
-}
-
-div.img-list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
- 
-div.img-list .li-mask {
-	/*display: inline-block;*/
-	margin: 0 1em 1em 0;
-	position: relative;
-	height: 200px;
-	width: 200px;
-} 
-
-div.text-content {
-	background: rgba(0,0,0,0.5);
-	color: white;
-	cursor: pointer;
-	display: table;
-	left: 0;
-	position: absolute;
-	top: 0;
-}
-
-div.text-content {
-	background: rgba(0,0,0,0.5);
-	color: white;
-	cursor: pointer;
-	display: table;
-	height: 200px;
-	width: 200px;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	transition: opacity 500ms;
-}
- 
-div.text-content span {
-	/*display: table-cell;
-	text-align: center;
-	vertical-align: middle;*/
-}
-div.text-content h3 {
-	/*display: table-cell;
-	text-align: center;
-	vertical-align: middle;*/
-	margin-top: 15px;
-	font-size: 25px;
-	text-transform: uppercase;
-	padding: 10px;
-	box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
-	background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0%;
-	color: #fff;
-	display: block;
-}
-div.text-content p {
-	/*display: table-cell;
-	text-align: center;
-	vertical-align: middle;*/
-	font-weight: bold;
-	margin-top: 15px;
-	color: #fff;
-}
- 
-div.img-list a:hover {
-	text-decoration: none;
-}
-											
- 
-div.img-list .li-mask {
-}
- 
-div.img-list .li-mask:hover div.text-content {
-	opacity: 1;
-} 
-
 /* V2 */
 /*The code below will simply setup the price-title area to be hidden and have a background. Please note that uou will have to change the background and height to match your website color scheme and product height  but first load it as and then adjust                                                                                      
 */
 
 .products .product .product-details {
     	position: absolute;
-    	background: rgba(119, 203, 109, 0.95);
+    	background: rgba(61, 156, 210, 0.51);
     	top: 0;
     	left: 0;
     	right: 0;
     	bottom: 0;
     	/*height: 100% !important;*/
-    	color: #f7f7f7;
+    	color: #fff !important;
     	padding: 1.618em;
-    	text-align: left;
+    	text-align: center;
    	opacity: 0;
    	filter: alpha(opacity=@opacity * 100);	
 	-webkit-transition: all ease 0.4s;
 	-moz-transition: all ease 0.4s;
    	-ms-transition: all ease 0.4s;
-    	-o-transition: all ease 0.4s;
-    	transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
   }
 
 /* Show the that was setup above when the user hovers*/
-
+ul.products li.product {
+	max-width: 300px;
+}
   ul.products li.product:hover .product-details {
 	filter: alpha(opacity=@opacity * 100);
 	opacity: 1;
@@ -137,3 +56,35 @@ div.img-list .li-mask:hover div.text-content {
   ul.products li.product img {
   	margin: 0px !important;
   }
+.products .product .product-details h3 {
+	color: #fff !important;
+}
+.products .product .product-details .price {
+	color: #fff !important;
+}
+
+/*
+BUTTON OVER LAY
+*/
+.products .product .product-details .button {
+position: absolute;
+bottom: 0px;
+right: 0px;
+left: 0px;
+background-color: rgba(43, 68, 117, 0.73);
+margin-bottom: 10px;
+}
+
+.products .product .product-details a.added_to_cart {
+    white-space: nowrap;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    background-color: #EE8DF5;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px !important;
+}
