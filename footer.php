@@ -36,26 +36,45 @@
 <script type="text/javascript">
 (function($) {
 $(window).on('resize', function(){
-var x = $('.wp-post-image').height();
-$('.product-details').css(
-    {'width': x + 'px'}
-);
-$('.product-details').css(
-    {'height': x + 'px'}
-);
+
+	console.log("pageloaded");
+    var x_featured = $('.storefront-featured-products .wp-post-image').height();
+	$('.storefront-featured-products .product-details').css(
+    	{'width': x_featured + 'px'}
+	);
+	$('.storefront-featured-products .product-details').css(
+		{'height': x_featured + 'px'}
+	);
+    var x_recent = $('.storefront-recent-products .wp-post-image').height();
+	$('.storefront-recent-products .product-details').css(
+    	{'width': x_recent + 'px'}
+	);
+	$('.storefront-recent-products .product-details').css(
+    	{'height': x_recent + 'px'}
+	);
+
 });
 }(jQuery));
 
 (function($) {
 $('.products').waitForImages(function() {
+
 	console.log("imageloaded");
-    var x = $('.wp-post-image').height();
-$('.product-details').css(
-    {'width': x + 'px'}
-);
-$('.product-details').css(
-    {'height': x + 'px'}
-);
+    var x_featured = $('.storefront-featured-products .wp-post-image').height();
+	$('.storefront-featured-products .product-details').css(
+    	{'width': x_featured + 'px'}
+	);
+	$('.storefront-featured-products .product-details').css(
+		{'height': x_featured + 'px'}
+	);
+    var x_recent = $('.storefront-recent-products .wp-post-image').height();
+	$('.storefront-recent-products .product-details').css(
+    	{'width': x_recent + 'px'}
+	);
+	$('.storefront-recent-products .product-details').css(
+    	{'height': x_recent + 'px'}
+	);
+
 });
 }(jQuery));
 
